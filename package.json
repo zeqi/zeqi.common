@@ -1,0 +1,23 @@
+{
+  "name": "zeqi.common",
+  "version": "1.0.0",
+  "description": "Common modules and utilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeqi/zeqi.common.git"
+  },
+  "keywords": [
+    "zeqi.common",
+    "common"
+  ],
+  "author": "zeqi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeqi/zeqi.common/issues"
+  },
+  "homepage": "https://github.com/zeqi/zeqi.common#readme"
+}
