@@ -1,17 +1,19 @@
 /**
  * Created by zeqi
- *         File: index
- * ============Author info===========
- *       Author: Xijun Zhu
- *         Date: 16-10-14
- *       Wechat: zhuzeqi2010
- *           QQ: 304566647
- * Office email: zhuxijun@b2cf.cn
- * Author email: zhuzeqi2010@163.com
- * ==========Author info end=========
+ * @description
+ * @module Common
+ * @version 1.0.0
+ * @author Xijun Zhu <zhuzeqi2010@163.com>
+ * @File svcMgrt
+ * @Date 16-12-6
+ * @Wechat zhuzeqi2010
+ * @QQ 304566647
+ * @Office-email zhuxijun@b2cf.cn
  */
 
 
-var moduleName = 'zeqi.common';
-console.log(moduleName);
-module.exports.moduleName = moduleName;
+
+var svcMgrt = require('./lib/svcMgrt');
+
+module.exports.SingletonFactory = svcMgrt.SingletonFactory
+module.exports.MapMgrt = svcMgrt.MapMgrt
