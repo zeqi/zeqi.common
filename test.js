@@ -5,6 +5,7 @@ var common = require('./index');
 var SingletonMgrt = common.SingletonMgrt;
 var MapMgrt = common.MapMgrt;
 var SetMgrt = common.SetMgrt;
+var ArrayMgrt = common.ArrayMgrt;
 
 
 //-----------The part of singleton factory module------------
@@ -65,6 +66,16 @@ console.log(MapMgrt.GET_MAPS);
 console.log(MapMgrt.CLEAR_MAPS());
 console.log(MapMgrt.GET_MAPS);*/
 
+//-----------The part of svc set module------------
+var handler = new SetMgrt('handler');
+handler.add({ name: 'zeqi', age: 25 });
+var handler_1 = new SetMgrt('handler');
+console.log(handler == handler_1);
+var hook = new SetMgrt('hook');
+console.log(handler==hook);
+console.log(SetMgrt.GET_SET_SIZE);
+
+//-----------The part of object module------------
 /*var svc = {
     name: 'zeqi',
     age: 25,
@@ -74,7 +85,6 @@ console.log(MapMgrt.GET_MAPS);*/
         city: 'www'
     }
 }
-
 
 delete svc['ssid', 'address'];
 console.log(svc); 
@@ -90,5 +100,3 @@ console.log(Object.keys(svc).length);
 console.log(svc.hasOwnProperty('www'));
 console.log(Object.values());
 console.log(222)*/
-
-

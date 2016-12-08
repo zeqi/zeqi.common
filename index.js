@@ -19,4 +19,5 @@ Object.assign(module.exports, svcMgrt);
 
 /*module.exports.SingletonMgrt = svcMgrt.SingletonMgrt;
 module.exports.MapMgrt = svcMgrt.MapMgrt;
-module.exports.SetMgrt = svcMgrt.SetMgrt;*/
+module.exports.SetMgrt = svcMgrt.SetMgrt;
+module.exports.ArrayMgrt = svcMgrt.ArrayMgrt;*/
