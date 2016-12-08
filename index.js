@@ -14,13 +14,9 @@
 
 
 var svcMgrt = require('./lib/svcMgrt');
-// module.exports.call(svcMgrt, this);
-// console.log(module.exports);
+
 Object.assign(module.exports, svcMgrt);
 
-// console.log(module.exports);
 /*module.exports.SingletonMgrt = svcMgrt.SingletonMgrt;
 module.exports.MapMgrt = svcMgrt.MapMgrt;
 module.exports.SetMgrt = svcMgrt.SetMgrt;*/
-
-console.log(module.exports);
