@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zeqi/zeqi.common/issues"
   },
-  "homepage": "https://github.com/zeqi/zeqi.common#readme"
+  "homepage": "https://github.com/zeqi/zeqi.common#readme",
+  "devDependencies": {
+    "tern": "^0.20.0"
+  }
 }
