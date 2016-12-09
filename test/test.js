@@ -1,6 +1,6 @@
 console.log('Wellcome to test js!');
 
-var common = require('./index');
+var common = require('./../index');
 
 var SingletonMgrt = common.SingletonMgrt;
 var MapMgrt = common.MapMgrt;
@@ -74,6 +74,8 @@ console.log(handler == handler_1);
 var hook = new SetMgrt('hook');
 console.log(handler==hook);
 console.log(SetMgrt.GET_SET_SIZE);
+console.log(SetMgrt.GET_SET_NAMES);
+console.log(SetMgrt.GET_MGRT);
 
 //-----------The part of object module------------
 /*var svc = {
