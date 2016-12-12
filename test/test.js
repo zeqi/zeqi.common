@@ -20,6 +20,7 @@
     var MapMgrt = common.MapMgrt;
     var SetMgrt = common.SetMgrt;
     var ArrayMgrt = common.ArrayMgrt;
+    var ManagerMgrt = common.ManagerMgrt; 
 
 
 
@@ -117,3 +118,23 @@
     console.log(svc.hasOwnProperty('www'));
     console.log(Object.values());
     console.log(222)*/
+
+
+
+/*var weakMap = new WeakMap();
+weakMap.set({}, 37);
+weakMap.set(function name(params) {
+    
+}, { host: '127.0.0.1', port: '9000', description: 'is chanquan data service' });
+
+console.log(weakMap);*/
+
+/*var managerMAP = new ManagerMgrt('DataSource', ManagerMgrt.TYPE.MAP);
+managerMAP.set('nonghe', { host: '127.0.0.1', port: '9000', description: 'is chanquan data service' });
+console.log(managerMAP);
+
+var managerArray = new ManagerMgrt('handler', ManagerMgrt.TYPE.ARRAY);
+managerArray.push({ host: '127.0.0.1', port: '9000', description: 'is chanquan data service' });
+console.log(managerArray);
+
+console.log(ManagerMgrt.GET_MGRT);*/
