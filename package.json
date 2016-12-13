@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/zeqi/zeqi.common#readme",
   "devDependencies": {
+    "q": "^1.4.1",
     "tern": "^0.20.0"
   }
 }

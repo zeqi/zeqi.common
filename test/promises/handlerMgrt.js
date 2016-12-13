@@ -22,6 +22,34 @@ var SingletonMgrt = common.SingletonMgrt;
 var MapMgrt = common.MapMgrt;
 var SetMgrt = common.SetMgrt;
 var ArrayMgrt = common.ArrayMgrt;
+var BaseHandler = common.BaseHandler;
+var HandlerMgrt = common.HandlerMgrt;
+
+var userHandlerMgrt = new HandlerMgrt();
+
+class ProfileHandler extends BaseHandler {
+    constructor(content) {
+        super(content);
+    }
+
+    get name() {
+        return 'ProfileHandler';
+    }
+
+    doAsync(done) {
+        done();
+    }
+}
+
+userHandlerMgrt.addHandler(new ProfileHandler({}));
+
+userHandlerMgrt.handlersAsync({}).then(data => {
+    console.log(data);
+}).fail(err => {
+    console.log(err);
+})
+
+
 
 
 
