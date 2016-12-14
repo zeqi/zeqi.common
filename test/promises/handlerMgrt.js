@@ -27,7 +27,7 @@ var HandlerMgrt = common.HandlerMgrt;
 
 var userHandlerMgrt = new HandlerMgrt();
 
-class ProfileHandler extends BaseHandler {
+class AgeHandler extends BaseHandler {
     constructor(content) {
         super(content);
     }
@@ -37,17 +37,55 @@ class ProfileHandler extends BaseHandler {
     }
 
     doAsync(done) {
+        var self = this;
+        var content = self.content;
+        content.age = 25;
         done();
     }
 }
 
-userHandlerMgrt.addHandler(new ProfileHandler({}));
+class QQHandler extends BaseHandler {
+    constructor(content) {
+        super(content);
+    }
 
-userHandlerMgrt.handlersAsync({}).then(data => {
-    console.log(data);
+    get name() {
+        return 'QQHandler';
+    }
+
+    doAsync(done) {
+        var self = this;
+        var content = self.content;
+        content.QQ = 304566647;
+        done();
+    }
+}
+
+var content = {
+    name:'zeqi'
+}
+
+userHandlerMgrt.add(new AgeHandler(content));
+
+userHandlerMgrt.add(new QQHandler(content));
+
+userHandlerMgrt.handlersAsync(content).then(data => {
+    console.log(content);
 }).fail(err => {
     console.log(err);
 })
+
+/*var handler = new Map();
+
+var profileHandler = new ProfileHandler({});
+handler.set('www', profileHandler);
+handler.set('good', profileHandler);
+
+var keys = handler.keys();
+
+console.log(keys);*/
+
+
 
 
 
