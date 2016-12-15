@@ -16,8 +16,8 @@
 var svcMgrt = require('./lib/svcMgrt');
 var handlerMgrt = require('./lib/handlerMgrt');
 
-Object.assign(module.exports, [svcMgrt]);
-Object.assign(module.exports, handlerMgrt);
+Object.assign(module.exports, svcMgrt, handlerMgrt);
+//Object.assign(module.exports, handlerMgrt);
 
 /*module.exports.SingletonMgrt = svcMgrt.SingletonMgrt;
 module.exports.MapMgrt = svcMgrt.MapMgrt;

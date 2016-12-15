@@ -61,12 +61,12 @@ class QQHandler extends BaseHandler {
         var self = this;
         var content = self.content;
         content.QQ = 304566647;
-        done();
+        //done();
         /*done(HandlerMgrt.actions.continue);
-        done(HandlerMgrt.actions.revoke);
-        done(HandlerMgrt.actions.terminate);*/
+        done(HandlerMgrt.action.revoke);
+        done(HandlerMgrt.action.terminate);*/
         //throw error
-        /*done(HandlerMgrt.actions.revoke, { code: 406, message: 'Invalid name' });*/
+        done(HandlerMgrt.action.revoke, { code: 406, message: 'Invalid name' });
     }
 
     undo(done) {
@@ -92,10 +92,6 @@ userHandlerMgrt.handlersAsync().then(data => {
     console.log(err);
 });
 
-
-
-
-
-
-
-
+var svcHandler = new MapMgrt('jianghu');
+svcHandler.set('zeqi', { name: 'zeqi' });
+console.log(svcHandler.keys());
