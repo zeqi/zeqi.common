@@ -33,13 +33,17 @@ class AgeHandler extends BaseHandler {
     }
 
     get name() {
-        return 'ProfileHandler';
+        return this.constructor.name;
     }
 
-    doAsync(done) {
+    do(done) {
         var self = this;
         var content = self.content;
         content.age = 25;
+        done();
+    }
+    undo(done) {
+        delete this.content.age;
         done();
     }
 }
@@ -50,40 +54,43 @@ class QQHandler extends BaseHandler {
     }
 
     get name() {
-        return 'QQHandler';
+        return this.constructor.name;
     }
 
-    doAsync(done) {
+    do(done) {
         var self = this;
         var content = self.content;
         content.QQ = 304566647;
+        done();
+        /*done(HandlerMgrt.actions.continue);
+        done(HandlerMgrt.actions.revoke);
+        done(HandlerMgrt.actions.terminate);*/
+        //throw error
+        /*done(HandlerMgrt.actions.revoke, { code: 406, message: 'Invalid name' });*/
+    }
+
+    undo(done) {
+        console.log('Undo opration!');
+        delete this.content.QQ;
         done();
     }
 }
 
 var content = {
-    name:'zeqi'
+    name: 'zeqi'
 }
 
 userHandlerMgrt.add(new AgeHandler(content));
 
 userHandlerMgrt.add(new QQHandler(content));
 
-userHandlerMgrt.handlersAsync(content).then(data => {
-    console.log(content);
+console.log(userHandlerMgrt.handlers);
+
+userHandlerMgrt.handlersAsync().then(data => {
+    console.log(data);
 }).fail(err => {
     console.log(err);
-})
-
-/*var handler = new Map();
-
-var profileHandler = new ProfileHandler({});
-handler.set('www', profileHandler);
-handler.set('good', profileHandler);
-
-var keys = handler.keys();
-
-console.log(keys);*/
+});
 
 
 
