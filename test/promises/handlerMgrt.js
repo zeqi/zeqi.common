@@ -95,3 +95,17 @@ userHandlerMgrt.handlersAsync().then(data => {
 var svcHandler = new MapMgrt('jianghu');
 svcHandler.set('zeqi', { name: 'zeqi' });
 console.log(svcHandler.keys());
+
+var time = new Date();
+console.log(time.getTime());
+console.log(time.getTimezoneOffset());
+
+
+var user = {
+    name: 'zeqi',
+    age: 25,
+    user: {}
+}
+console.log(Object.keys(user));
+Object.assign(user.user, user);
+console.log(user);
