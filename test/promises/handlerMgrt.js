@@ -106,6 +106,19 @@ var user = {
     age: 25,
     user: {}
 }
-console.log(Object.keys(user));
+/*console.log(Object.keys(user));
 Object.assign(user.user, user);
 console.log(user);
+*/
+/*var user = {
+    name: 'zeqi',
+    age: 25
+}*/
+
+for (var i in user) {
+    if (i == 'name') {
+        continue;
+    }
+    console.log(i);
+}
+

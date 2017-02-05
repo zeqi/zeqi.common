@@ -23,5 +23,8 @@
   "devDependencies": {
     "q": "^1.4.1",
     "tern": "^0.20.0"
+  },
+  "dependencies": {
+    "jsonpath": "^0.2.9"
   }
 }
