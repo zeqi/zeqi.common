@@ -78,5 +78,5 @@ console.log(cities);*/
 console.log(JSON.stringify(cities));*/
 
 var str = '$[1].population[0].name';
-str = str.replace(/^(.*)\.(.*)/,'$1.DisplayName');
+str = str.replace(/^(.*)\.(.*)/, '$1.DisplayName');
 console.log(str);

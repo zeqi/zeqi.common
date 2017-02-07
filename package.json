@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/zeqi/zeqi.common#readme",
   "devDependencies": {
-    "q": "^1.4.1",
     "tern": "^0.20.0"
   },
   "dependencies": {
-    "jsonpath": "^0.2.9"
+    "amqp": "^0.2.6",
+    "amqplib": "^0.5.1",
+    "jsonpath": "^0.2.9",
+    "q": "^1.4.1"
   }
 }
