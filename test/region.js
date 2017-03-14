@@ -122,3 +122,16 @@ db.getCollection('ob.partner').find({}).limit(300).forEach(function (item) {
         print('the fail region _id:', item._id.toString(), 'the fail region:', item.region);
     }
 })
+
+db.getCollection('ob.college').find({ "_id": ObjectId("5784d0e2a254a14b294c7a00") }).forEach(function (item) {
+    if (item && typeof item.enrolls) {
+
+        for (var i = 0; i < item.enrolls.length; i++) {
+            if (i > 28) {
+                return;
+            }
+            var enroll = item.enrolls[i];
+            db.getCollection('ob.college').update({ "_id": ObjectId("58b93d23dee4d5f34d1bdefa") }, { enrolls: { $push: enroll } });
+        }
+    }
+})

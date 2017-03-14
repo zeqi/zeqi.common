@@ -21,13 +21,15 @@
   },
   "homepage": "https://github.com/zeqi/zeqi.common#readme",
   "devDependencies": {
-    "tern": "^0.20.0"
-  },
-  "dependencies": {
     "amqp": "^0.2.6",
     "amqplib": "^0.5.1",
     "jsonpath": "^0.2.9",
     "mosca": "^2.2.0",
+    "tern": "^0.20.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.3",
+    "mongoose": "^4.9.0",
     "q": "^1.4.1"
   }
 }
