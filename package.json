@@ -25,7 +25,9 @@
     "amqplib": "^0.5.1",
     "jsonpath": "^0.2.9",
     "mosca": "^2.2.0",
-    "tern": "^0.20.0"
+    "soap": "^0.18.0",
+    "tern": "^0.20.0",
+    "xml2js": "^0.4.17"
   },
   "dependencies": {
     "debug": "^2.6.3",
