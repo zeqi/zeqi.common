@@ -31,3 +31,28 @@ var soaptest = function () {
 }
 
 soaptest();*/
+
+var debug = require('debug')('zeqi.common:test:soap');
+/*class Test {
+  constructor() {
+
+  }
+  static init() {
+    var self = this;
+    console.log('');
+  }
+
+  init(name) {
+    debug('arguments', arguments);
+    var self = this;
+    console.log(name);
+  }
+}
+
+Test.init();
+
+var test = new Test();
+test.init('zeqi');*/
+
+// var names = ['zeqi', 'zhiqiang'];
+// console.log(names.join('、'));
