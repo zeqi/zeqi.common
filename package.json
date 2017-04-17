@@ -31,8 +31,10 @@
   },
   "dependencies": {
     "debug": "^2.6.3",
+    "kafka-node": "^1.6.0",
     "mongoose": "^4.9.0",
     "q": "^1.4.1",
-    "redis": "^2.7.1"
+    "redis": "^2.7.1",
+    "socket.io": "^1.7.3"
   }
 }
