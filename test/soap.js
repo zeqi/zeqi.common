@@ -54,5 +54,7 @@ Test.init();
 var test = new Test();
 test.init('zeqi');*/
 
-// var names = ['zeqi', 'zhiqiang'];
+var names = ['zeqi', 'zhiqiang'];
 // console.log(names.join('、'));
+
+debug(typeof names);
