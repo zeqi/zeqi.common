@@ -23,7 +23,6 @@
   "devDependencies": {
     "amqp": "^0.2.6",
     "amqplib": "^0.5.1",
-    "jsonpath": "^0.2.9",
     "mosca": "^2.2.0",
     "soap": "^0.18.0",
     "tern": "^0.20.0",
@@ -31,8 +30,10 @@
   },
   "dependencies": {
     "debug": "^2.6.3",
+    "jsonpath": "^0.2.11",
     "kafka-node": "^1.6.0",
     "mongoose": "^4.9.0",
+    "npm": "^4.5.0",
     "q": "^1.4.1",
     "redis": "^2.7.1",
     "socket.io": "^1.7.3"

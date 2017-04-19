@@ -13,14 +13,14 @@
 
 
 
-var svcMgrt = require('./lib/svcMgrt');
-var handlerMgrt = require('./lib/handlerMgrt');
+var Mgrt = require('./lib/mgrt');
 var DS = require('./lib/ds');
+var IM = require('./lib/im');
 
-Object.assign(module.exports, svcMgrt, handlerMgrt, DS);
+Object.assign(module.exports, {Mgrt: Mgrt}, {DS: DS}, {IM: IM});
 //Object.assign(module.exports, handlerMgrt);
 
 /*module.exports.SingletonMgrt = svcMgrt.SingletonMgrt;
-module.exports.MapMgrt = svcMgrt.MapMgrt;
-module.exports.SetMgrt = svcMgrt.SetMgrt;
-module.exports.ArrayMgrt = svcMgrt.ArrayMgrt;*/
+ module.exports.MapMgrt = svcMgrt.MapMgrt;
+ module.exports.SetMgrt = svcMgrt.SetMgrt;
+ module.exports.ArrayMgrt = svcMgrt.ArrayMgrt;*/
