@@ -11,6 +11,9 @@ var topic = 'tianjing';
 var broker = Broker.init('zeqi.websocket');
 var producer = broker.producerFact;
 var consumer = broker.createConsumer(topic);
+var beijing_consumer = broker.createConsumer('beijing');
+broker.topicExists(topic);
+
 
 
 function onMessage(message) {
