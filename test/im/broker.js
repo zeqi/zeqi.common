@@ -45,8 +45,28 @@ console.log(a);
 
 var b = 0;
 console.log(b++);
-console.log(b);
+console.log(b);*/
+
+/*for (var i = 0; i < 5; i++) {
+  console.log('for', i);
+  setTimeout(function () {
+    console.log('setTimeout', i);
+  }, 1000)
+}
+
+console.log('next', i);*/
+
+/*function gencb(i) {
+  //console.log('gencb', i);
+  return function () {
+    console.log('gencb return', i);
+  }
+}
 
 for (var i = 0; i < 5; i++) {
-  console.log(i);
-}*/
+  console.log('for', i);
+  setTimeout(gencb(i), 1000)
+}
+
+console.log('next', i);*/
+
