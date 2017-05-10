@@ -23,6 +23,7 @@
   "devDependencies": {
     "amqp": "^0.2.6",
     "amqplib": "^0.5.1",
+    "crypto": "0.0.3",
     "mosca": "^2.2.0",
     "soap": "^0.18.0",
     "tern": "^0.20.0",

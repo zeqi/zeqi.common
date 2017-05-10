@@ -14,20 +14,6 @@ var consumer = broker.createConsumer(topic);
 var beijing_consumer = broker.createConsumer('beijing');
 broker.topicExists(topic);
 
-
-
-function onMessage(message) {
-  console.log('broker', message);
-}
-
-/*var producer = Producer.init(client);
-var consumer = Consumer.init(client, topic, {
-  groupId: topic,
-  autoCommit: true,
-  fetchMaxWaitMs: 1000,
-  fetchMaxBytes: 1024 * 1024
-}, onMessage);*/
-
 var data = { event: 'chat message', payload: { username: 'Test', message: '天地悠悠22222222222' } };
 producer.sendMessagesByTopics(topic, data).then(data => {
   data = { event: 'chat message', payload: { username: 'Test_1', message: '过客匆匆3333333333' } };
@@ -69,4 +55,13 @@ for (var i = 0; i < 5; i++) {
 }
 
 console.log('next', i);*/
+/*
+var crypto = require('crypto');
+var password_1 = crypto.createHash('md5').update('123123').digest('hex');
+console.log(password_1);
+var password_2 = crypto.createHash('md5').update('123123').digest('hex');
+console.log(password_2);
 
+var randomStr = Math.random().toString();
+console.log('randomStr', randomStr);
+console.log(randomStr.substr(randomStr.length - 4));*/
